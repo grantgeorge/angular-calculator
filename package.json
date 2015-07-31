@@ -37,6 +37,10 @@
   },
   "scripts": {
     "test": "grunt test",
-    "postinstall": "grunt build"
-  }
+    "postinstall": "bower install && grunt build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "bower_components"
+  ]
 }
