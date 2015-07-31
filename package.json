@@ -29,8 +29,6 @@
     "gzippo": "^0.2.0",
     "jit-grunt": "^0.9.1",
     "jshint-stylish": "^1.0.0",
-    "karma-jasmine": "*",
-    "karma-phantomjs-launcher": "*",
     "morgan": "^1.6.1",
     "time-grunt": "^1.0.0"
   },
@@ -44,5 +42,9 @@
   "cacheDirectories": [
     "node_modules",
     "bower_components"
-  ]
+  ],
+  "devDependencies": {
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.0"
+  }
 }

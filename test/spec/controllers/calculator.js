@@ -17,7 +17,14 @@ describe('Controller: CalculatorCtrl', function () {
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(CalculatorCtrl.awesomeThings.length).toBe(3);
+  describe('clickNumber function', function () {
+
+    it('clickNumber should concat the clicked number to currentOutput', function () {
+      CalculatorCtrl.currentOutput = '';
+      CalculatorCtrl.clickNumber('3');
+      expect(CalculatorCtrl.currentOutput).toBe('3');
+    });
+
   });
+
 });
