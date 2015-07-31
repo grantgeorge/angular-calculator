@@ -1,6 +1,5 @@
 {
   "name": "angularcalc",
-  "private": true,
   "dependencies": {
     "express": "^4.13.1",
     "grunt": "^0.4.5",
