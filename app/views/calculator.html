@@ -1,0 +1,112 @@
+<h1>Angular Calculator</h1>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3 has-info">
+    <input type="text" ng-model="calculator.currentOutput"
+      placeholder="0" class="form-control input-hg calc-input" />
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clear()"
+        class="btn btn-block btn-primary calc-button">AC</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.operation('*-1')"
+        class="btn btn-block btn-primary calc-button">+/-</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.operation('*.01')"
+        class="btn btn-block btn-primary calc-button">%</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.operation('/')"
+        class="btn btn-block btn-warning calc-button">/</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('7')"
+        class="btn btn-block btn-primary calc-button">7</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('8')"
+        class="btn btn-block btn-primary calc-button">8</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('9')"
+        class="btn btn-block btn-primary calc-button">9</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.operation('*')"
+        class="btn btn-block btn-warning calc-button">*</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('4')"
+        class="btn btn-block btn-primary calc-button">4</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('5')"
+        class="btn btn-block btn-primary calc-button">5</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('6')"
+        class="btn btn-block btn-primary calc-button">6</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.operation('-')"
+        class="btn btn-block btn-warning calc-button">-</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('1')"
+        class="btn btn-block btn-primary calc-button">1</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('2')"
+        class="btn btn-block btn-primary calc-button">2</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('3')"
+        class="btn btn-block btn-primary calc-button">3</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.operation('+')"
+        class="btn btn-block btn-warning calc-button">+</button>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-sm-6 calc-row">
+      <button ng-click="calculator.clickNumber('0')"
+        class="btn btn-block btn-primary calc-button">0</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.clickNumber('.')"
+        class="btn btn-block btn-primary calc-button">.</button>
+    </div>
+    <div class="col-sm-3 calc-row">
+      <button ng-click="calculator.evaluate()"
+        class="btn btn-block btn-warning calc-button">=</button>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<p class="calc-summary">{{ calculator.operations }}</p>
